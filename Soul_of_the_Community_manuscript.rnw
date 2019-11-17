@@ -35,7 +35,7 @@
 	Logan, UT 84322--3900,
 	USA. \\
            Tel.: 208-316-2798\\
-          \email{aquach4@hotmail.com}           
+          \email{aquach4@gmail.com}           
 %             \emph{Present address:} of F. Author  %  if needed
            \and
            J\"urgen Symanzik \at
@@ -70,7 +70,7 @@ In this article, we work with data from the Soul of the Community survey project
 \end{abstract}
 
 \section{Introduction}\label{1}
-From 2008 to 2010, the Knight Foundation \cite{kf} conducted the Soul of the Community (SOTC) study \cite{soul}. The Knight Foundation is a foundation that supports transformational ideas, helps communities succeed, invests in civic innovations, and promotes civic innovation and robust engagement. Together with Gallup, they collected data from more than 47,800 participants from 26 communities across the United States. But, unfortunately, the 26 communities were not randomly selected. Rather, these are all the communities where the Knight Foundation has been active in the past \citep{kfabout}. The participants were given a survey with more than 200 questions each year. The questions asked for demographic information, the participants' feelings towards their community, location, and much more.
+From 2008 to 2010, the Knight Foundation \citep{kf} conducted the Soul of the Community (SOTC) study \citep{soul}. The Knight Foundation is a foundation that supports transformational ideas, helps communities succeed, invests in civic innovations, and promotes civic innovation and robust engagement. Together with Gallup, they collected data from more than 47,800 participants from 26 communities across the United States. But, unfortunately, the 26 communities were not randomly selected. Rather, these are all the communities where the Knight Foundation has been active in the past \citep{kfabout}. The participants were given a survey with more than 200 questions each year. The questions asked for demographic information, the participants' feelings towards their community, location, and much more.
 \newline
 \indent
 Our analysis was conducted as part of the bi-annual 2013 Data Expo competition of the Sections on Statistical Graphics and Statistical Computing of the American Statistical Association (ASA). Additional details of the 2013 Data Expo can be found at \citet{dataexpo} and in \citet{editorial}. \citet{jsm}  contains our preliminary attempt to assess attachment to a community. Overviews of other, recent Data Expos can be found in \citet{dataexpo10}, \citet{dataexpo11} and \citet{dataexpo14} for the 2006, 2009, and 2011 Data Expos.
@@ -87,7 +87,7 @@ Figure~\ref{map} shows a map of the 26 communities involved in the SOTC survey p
 	 \caption{\label{map} Locations of the 26 communities involved in the SOTC project, overlaid on a Google map.} 
 \end{figure}  
 
-Our article is arranged as follows: An overview of machine learning algorithms applied to the SOTC data follows in Section~\ref{3}. Results for random forests and an archetypal analysis are provided in Sections~\ref{4} and~\ref{7}, respectively. One particularly interesting community, Gary, Indiana is further explored using parallel coordinate plots in Section~\ref{pcp}. A graphical summary of some of the most interesting variables via dot charts and our conclusion is provided in Section~\ref{8}. Possible future work is outlined in Section~\ref{future}. The software we used is summarized in Section~\ref{9}. In Appendix~\ref{AppendixA}, we describe our data cleaning steps. Appendix~\ref{AppendixB} contains two tables with predictor variables and additional variables that summarize all variables and their abbreviations used in this article.
+Our article is arranged as follows: An overview of machine learning algorithms applied to the SOTC data follows in Section~\ref{3}. Results for random forests and an archetypal analysis are provided in Sections~\ref{4} and~\ref{7}, respectively. One particularly interesting community, Gary, Indiana is further explored using parallel coordinate plots in Section~\ref{pcp}. A graphical summary of some of the most interesting variables via dot charts and our conclusion is provided in Section~\ref{8}. Possible future work is outlined in Section~\ref{future}. The software we used is summarized in Section~\ref{9}. In Appendix~\ref{AppendixA}, we describe our data cleaning steps. Appendix~\ref{AppendixB} contains two tables with predictor variables and additional variables that summarize all variables and their abbreviations used in this article. See \url{https://github.com/COSTDataExpo2013/QuachSymanzikForsgren} for all R code used and files required to reproduce this manuscript.
 
 \section{Machine Learning Algorithms}\label{3}
 As stated before, the goal of our analysis was to find factors that foster attachment to one's community. A subgoal was to find a method that would allow us to predict the attachment level in each of the three years with the lowest classification error, but we also wanted to be able to interpret the results produced by the different methods. In general, there is a tradeoff between prediction accuracy and model interpretability. We used the following algorithms to predict the attachment level in each of the three years: random forests, SVM (Support Vector Machines), multiple LDA (Linear Discriminant Analysis), and RPART (Recursive Partitioning And Regression Trees). We chose these four classifiers because SVM and random forests are generally known to be the best classifiers \citep{classifiers} and RPART and LDA are traditional classification methods. 
@@ -398,7 +398,7 @@ q26r & How often do you talk to or visit with your immediate neighbors   \\ \hli
 
 
 \begin{acknowledgements}
-We would like to thank Dr. Adele Cutler for her input on the methodology of this manuscript and for providing access to her archetype software. In addition, we would like to thank the reviewers for their helpful comments and suggestions.
+We would like to thank Dr. Adele Cutler for her input on the methodology of this manuscript and for providing access to her archetype software. In addition, we would like to thank the reviewers for their helpful comments and suggestions. This article was submitted prior to J\"urgen Symanzik becoming Editor-in-Chief of Computational Statistics, and was handled by Yuichi Mori, the previous Editor-in-Chief. 
 \end{acknowledgements}
 
 \bibliographystyle{spbasic}     
